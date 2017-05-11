@@ -1,24 +1,20 @@
 from turtle import *
 
-shape("turtle")
-speed(5)
 color("purple")
+speed(5)
 
-for i in range(6):
-    forward(100)
+n = 4 
+
+right(60/2)
+
+for i in range(n):
+
+    forward(50)
     left(60)
-
-color("green")
-for i in range(5):
-    forward(100)
-    left(72)
-
-color("orange")
-for i in range(4):
-    forward(100)
-    left(90)
-
-color("blue")
-for i in range(3):
-    forward(100)
-    left(120)
+    forward(50)
+    left(180-60)
+    forward(50)
+    left(60)
+    forward(50)
+    if i < n-1:
+        right(60 + 180 - 360/n)
